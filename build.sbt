@@ -1,6 +1,6 @@
-name := "kafka_sbt_test"
+name := "hello-tantan"
 
-version := "1.1"
+version := "1.0"
 
 scalaVersion := "2.11.8"
 
