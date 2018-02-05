@@ -1,6 +1,6 @@
 name := "kafka_sbt_test"
 
-version := "0.1"
+version := "1.1"
 
 scalaVersion := "2.11.8"
 
@@ -9,7 +9,7 @@ scalaVersion := "2.11.8"
 libraryDependencies ++= {
   val sparkV = "2.2.1"
   Seq(
-
+    "org.apache.spark"            %%  "spark-sql"                   % sparkV withSources() withJavadoc(),
     "org.apache.spark"            %%  "spark-core"                   % sparkV withSources() withJavadoc(),
     "org.apache.spark"            %%  "spark-streaming"   % sparkV withSources() withJavadoc(),
     "org.apache.spark"            %%  "spark-streaming-kafka-0-8"   % sparkV withSources() withJavadoc()
